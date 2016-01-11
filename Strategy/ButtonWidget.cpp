@@ -41,7 +41,7 @@ ButtonWidget::ButtonWidget(QWidget *parent)
         }
         if (stream.status()!=QTextStream::Ok)
         {
-            qDebug()<<"Ошибка чтения файла";
+            qDebug()<<"п·я┬п╦п╠п╨п╟ я┤я┌п╣пҐп╦я▐ я└п╟п╧п╩п╟";
         }
         fNumbers.close();
     }
