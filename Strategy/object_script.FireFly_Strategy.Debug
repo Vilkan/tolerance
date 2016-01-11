@@ -9,8 +9,8 @@ INPUT(
 ./debug/SectorWidget.o
 ./debug/SectorDialog.o
 ./debug/SpaceSectorDialog.o
-./debug/SpaceShipWidget.o
-./debug/UnitWidget.o
+./debug/SpaceShipDialog.o
+./debug/UnitDialog.o
 ./debug/moc_widget.o
 ./debug/moc_ButtonWidget.o
 ./debug/moc_MapWidget.o
@@ -20,6 +20,6 @@ INPUT(
 ./debug/moc_SectorWidget.o
 ./debug/moc_SectorDialog.o
 ./debug/moc_SpaceSectorDialog.o
-./debug/moc_SpaceShipWidget.o
-./debug/moc_UnitWidget.o
+./debug/moc_SpaceShipDialog.o
+./debug/moc_UnitDialog.o
 );

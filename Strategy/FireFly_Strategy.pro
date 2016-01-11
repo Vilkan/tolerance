@@ -22,8 +22,8 @@ SOURCES += main.cpp\
     SectorWidget.cpp \
     SectorDialog.cpp \
     SpaceSectorDialog.cpp \
-    SpaceShipWidget.cpp \
-    UnitWidget.cpp
+    SpaceShipDialog.cpp \
+    UnitDialog.cpp
 
 HEADERS  += widget.h \
     ButtonWidget.h \
@@ -34,8 +34,8 @@ HEADERS  += widget.h \
     SectorWidget.h \
     SectorDialog.h \
     SpaceSectorDialog.h \
-    SpaceShipWidget.h \
-    UnitWidget.h
+    SpaceShipDialog.h \
+    UnitDialog.h
 
 RESOURCES +=
 

@@ -3,8 +3,8 @@
 
 //#include <QtWidgets>
 #include <QtGui>
-#include "SpaceShipWidget.h"
-#include "UnitWidget.h"
+#include "SpaceShipDialog.h"
+#include "UnitDialog.h"
 
 class SpaceSectorDialog : public QDialog
 {
