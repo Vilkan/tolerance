@@ -7,7 +7,7 @@ Widget::Widget(QWidget *parent)
     this->setLayout(layout);
     this->setMinimumSize(700, 400);
 
-    setWindowTitle(tr("Diary of FireFly"));
+    setWindowTitle(tr("Tolerant diary"));
 
     bw = new ButtonWidget(this);
     layout->addWidget(bw, 0, 0, 1, 1, 0);

@@ -20,7 +20,10 @@ SOURCES += main.cpp\
     TextMapWidget.cpp \
     GraphMapWidget.cpp \
     SectorWidget.cpp \
-    SectorDialog.cpp
+    SectorDialog.cpp \
+    SpaceSectorDialog.cpp \
+    SpaceShipWidget.cpp \
+    UnitWidget.cpp
 
 HEADERS  += widget.h \
     ButtonWidget.h \
@@ -29,7 +32,10 @@ HEADERS  += widget.h \
     TextMapWidget.h \
     GraphMapWidget.h \
     SectorWidget.h \
-    SectorDialog.h
+    SectorDialog.h \
+    SpaceSectorDialog.h \
+    SpaceShipWidget.h \
+    UnitWidget.h
 
 RESOURCES +=
 

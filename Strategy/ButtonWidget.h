@@ -35,7 +35,5 @@ class ButtonWidget : public QWidget
                 QAction* save;
                 QAction* exit;
 
-
-
 };
 #endif//ButtonWidget_H

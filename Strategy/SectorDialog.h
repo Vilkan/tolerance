@@ -3,6 +3,7 @@
 
 //#include <QtWidgets>
 #include <QtGui>
+#include "SpaceSectorDialog.h"
 
 class SectorDialog : public QDialog
 {
@@ -23,9 +24,12 @@ private:
     QPushButton* planetSectors;
     QPushButton* cancel;
 
+    SpaceSectorDialog* spaceSectorDialog;
+
 signals:
 
 public slots:
+    void createSpaceSectorDialog();
 };
 
 #endif // SECTORDIALOG_H

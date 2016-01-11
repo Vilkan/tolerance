@@ -11,7 +11,7 @@ SectorDialog::SectorDialog(QString str, QWidget* pwgt/*= 0*/) : QDialog(pwgt, Qt
 
     pbxLayout = new QBoxLayout(QBoxLayout::LeftToRight);
     this->setLayout(pbxLayout);
-    this->setMinimumSize(200, 200);
+    this->setMinimumSize(300, 300);
 
     sectorInfo=str;
     int pos=0;
@@ -38,16 +38,23 @@ SectorDialog::SectorDialog(QString str, QWidget* pwgt/*= 0*/) : QDialog(pwgt, Qt
     spaceSector = new QPushButton("SpaceSector");
     pbxLayout->addWidget(spaceSector);
     spaceSector->setObjectName("spaceSector");
-    QObject::connect(this->findChild<QObject*>("spaceSector"), SIGNAL(clicked()), this, SLOT(hide()));
+    QObject::connect(this->findChild<QObject*>("spaceSector"), SIGNAL(clicked()), this, SLOT(createSpaceSectorDialog()));
 
     planetSectors = new QPushButton("PlanetSectors");
     pbxLayout->addWidget(planetSectors);
     planetSectors->setObjectName("planetSectors");
-    //QObject::connect(this->findChild<QObject*>("cancel"), SIGNAL(clicked()), this, SLOT(hide()));
 
     cancel = new QPushButton("Cancel");
     pbxLayout->addWidget(cancel);
     cancel->setObjectName("cancel");
     QObject::connect(this->findChild<QObject*>("cancel"), SIGNAL(clicked()), this, SLOT(hide()));
 
+    setWindowTitle("Sector " + sectorName);
+
+}
+
+void SectorDialog::createSpaceSectorDialog()
+{
+    spaceSectorDialog = new SpaceSectorDialog(sectorName+".0");
+    spaceSectorDialog->show();
 }

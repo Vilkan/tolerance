@@ -10,7 +10,7 @@ TextMapWidget::TextMapWidget(QWidget *parent) : QWidget(parent)
     pbxLayout = new QBoxLayout(QBoxLayout::TopToBottom);
     this->setLayout(pbxLayout);
 
-    fSector.setFileName("sector.txt");
+    fSector.setFileName("sectors.txt");
     if (fSector.open(QIODevice::ReadOnly))
     {
         QTextStream stream(&fSector);

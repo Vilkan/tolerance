@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'TextMapWidget.h'
 **
-** Created: Thu 24. Dec 14:50:03 2015
+** Created: Mon 11. Jan 14:11:42 2016
 **      by: The Qt Meta Object Compiler version 63 (Qt 4.8.4)
 **
 ** WARNING! All changes made in this file will be lost!

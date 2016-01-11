@@ -11,7 +11,7 @@ StatisticWidget::StatisticWidget(QWidget *parent)
     pbxLayout = new QBoxLayout(QBoxLayout::LeftToRight);
     this->setLayout(pbxLayout);
 
-    fResource.setFileName("resource.txt");
+    fResource.setFileName("resources.txt");
     if (fResource.open(QIODevice::ReadOnly))
     {
         QTextStream stream(&fResource);
