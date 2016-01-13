@@ -17,6 +17,7 @@ private:
     QBoxLayout* pbxLayout;
 
     QFile fSpaceSector;
+    QString str;
 
     QPushButton* spaceShips;
     QMenu* menuSpaceShips;
@@ -28,9 +29,12 @@ private:
 
     QPushButton* cancel;
 
+    SpaceShipDialog* spaceShipDialog;
+
 signals:
 
 public slots:
+    void createSpaceShipDialog();
 };
 
 #endif // SPACESECTORDIALOG_H

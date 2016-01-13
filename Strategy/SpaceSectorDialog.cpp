@@ -30,13 +30,14 @@ SpaceSectorDialog::SpaceSectorDialog(QString spaceSectorName, QWidget* pwgt/*= 0
     if (fSpaceSector.open(QIODevice::ReadOnly))
     {
         QTextStream stream(&fSpaceSector);
-        QString str;
+        str;
         while (!stream.atEnd())
         {
             str = stream.readLine();
             if (str[0]=='S')
             {
                 spaceShip = new QAction(str, spaceShips);
+                QObject::connect(spaceShip, SIGNAL(triggered()), this, SLOT(createSpaceShipDialog()));
                 menuSpaceShips->addAction(spaceShip);
                 qDebug()<<str;
             }
@@ -61,4 +62,10 @@ SpaceSectorDialog::SpaceSectorDialog(QString spaceSectorName, QWidget* pwgt/*= 0
     cancel->setObjectName("cancel");
     QObject::connect(this->findChild<QObject*>("cancel"), SIGNAL(clicked()), this, SLOT(hide()));
 
+}
+
+void SpaceSectorDialog::createSpaceShipDialog()
+{
+    spaceShipDialog=new SpaceShipDialog(str);
+    spaceShipDialog->show();
 }

@@ -61,7 +61,7 @@ void SpaceShipDialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
 }
 
 const QMetaObject SpaceShipDialog::staticMetaObject = {
-    { &QWidget::staticMetaObject, qt_meta_stringdata_SpaceShipDialog.data,
+    { &QDialog::staticMetaObject, qt_meta_stringdata_SpaceShipDialog.data,
       qt_meta_data_SpaceShipDialog,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
 };
 
@@ -76,12 +76,12 @@ void *SpaceShipDialog::qt_metacast(const char *_clname)
     if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_SpaceShipDialog.stringdata0))
         return static_cast<void*>(const_cast< SpaceShipDialog*>(this));
-    return QWidget::qt_metacast(_clname);
+    return QDialog::qt_metacast(_clname);
 }
 
 int SpaceShipDialog::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QWidget::qt_metacall(_c, _id, _a);
+    _id = QDialog::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     return _id;
