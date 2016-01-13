@@ -16,14 +16,14 @@ ButtonWidget::ButtonWidget(QWidget *parent)
     call->setObjectName("call");
     menuCall = new QMenu();
     call->setMenu(menuCall);
-    call->hide();
+    //call->hide();
 
     send = new QPushButton("Send");
     pbxLayout->addWidget(send, 1);
     send->setObjectName("send");
     menuSend = new QMenu();
     send->setMenu(menuSend);
-    send->hide();
+    //send->hide();
 
     fNumbers.setFileName("numbers.txt");
     if (fNumbers.open(QIODevice::ReadOnly))
@@ -41,7 +41,7 @@ ButtonWidget::ButtonWidget(QWidget *parent)
         }
         if (stream.status()!=QTextStream::Ok)
         {
-            qDebug()<<"п·я┬п╦п╠п╨п╟ я┤я┌п╣пҐп╦я▐ я└п╟п╧п╩п╟";
+            qDebug()<<"numbers fail";
         }
         fNumbers.close();
     }
