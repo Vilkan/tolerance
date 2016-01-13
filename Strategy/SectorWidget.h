@@ -1,7 +1,7 @@
 #ifndef SECTORWIDGET_H
 #define SECTORWIDGET_H
 
-//#include <QtWidgets>
+#include <QtWidgets>
 #include <QtGui>
 #include "SectorDialog.h"
 

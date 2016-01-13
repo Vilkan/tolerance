@@ -1,7 +1,7 @@
 #ifndef SPACESECTORDIALOG_H
 #define SPACESECTORDIALOG_H
 
-//#include <QtWidgets>
+#include <QtWidgets>
 #include <QtGui>
 #include "SpaceShipDialog.h"
 #include "UnitDialog.h"

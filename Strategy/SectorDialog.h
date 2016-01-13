@@ -1,7 +1,7 @@
 #ifndef SECTORDIALOG_H
 #define SECTORDIALOG_H
 
-//#include <QtWidgets>
+#include <QtWidgets>
 #include <QtGui>
 #include "SpaceSectorDialog.h"
 

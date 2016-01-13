@@ -3,7 +3,7 @@
 
 #include "TextMapWidget.h"
 #include "GraphMapWidget.h"
-//#include <QtWidgets>
+#include <QtWidgets>
 #include <QtGui>
 
 class MapWidget : public QWidget

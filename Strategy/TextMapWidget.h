@@ -1,7 +1,7 @@
 #ifndef TEXTMAPWIDGET_H
 #define TEXTMAPWIDGET_H
 
-//#include <QtWidgets>
+#include <QtWidgets>
 #include <QtGui>
 #include "SectorWidget.h"
 

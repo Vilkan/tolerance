@@ -1,7 +1,7 @@
 #ifndef GRAPHMAPWIDGET_H
 #define GRAPHMAPWIDGET_H
 
-//#include <QtWidgets>
+#include <QtWidgets>
 #include <QtGui>
 
 class GraphMapWidget : public QWidget

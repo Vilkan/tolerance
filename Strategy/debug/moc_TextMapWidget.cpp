@@ -1,26 +1,45 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'TextMapWidget.h'
 **
-** Created: Mon 11. Jan 16:28:43 2016
-**      by: The Qt Meta Object Compiler version 63 (Qt 4.8.4)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.5.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
 #include "../TextMapWidget.h"
+#include <QtCore/qbytearray.h>
+#include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'TextMapWidget.h' doesn't include <QObject>."
-#elif Q_MOC_OUTPUT_REVISION != 63
-#error "This file was generated using the moc from 4.8.4. It"
+#elif Q_MOC_OUTPUT_REVISION != 67
+#error "This file was generated using the moc from 5.5.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
+struct qt_meta_stringdata_TextMapWidget_t {
+    QByteArrayData data[1];
+    char stringdata0[14];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+    qptrdiff(offsetof(qt_meta_stringdata_TextMapWidget_t, stringdata0) + ofs \
+        - idx * sizeof(QByteArrayData)) \
+    )
+static const qt_meta_stringdata_TextMapWidget_t qt_meta_stringdata_TextMapWidget = {
+    {
+QT_MOC_LITERAL(0, 0, 13) // "TextMapWidget"
+
+    },
+    "TextMapWidget"
+};
+#undef QT_MOC_LITERAL
+
 static const uint qt_meta_data_TextMapWidget[] = {
 
  // content:
-       6,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        0,    0, // methods
@@ -33,10 +52,6 @@ static const uint qt_meta_data_TextMapWidget[] = {
        0        // eod
 };
 
-static const char qt_meta_stringdata_TextMapWidget[] = {
-    "TextMapWidget\0"
-};
-
 void TextMapWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     Q_UNUSED(_o);
@@ -45,28 +60,21 @@ void TextMapWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
     Q_UNUSED(_a);
 }
 
-const QMetaObjectExtraData TextMapWidget::staticMetaObjectExtraData = {
-    0,  qt_static_metacall 
-};
-
 const QMetaObject TextMapWidget::staticMetaObject = {
-    { &QWidget::staticMetaObject, qt_meta_stringdata_TextMapWidget,
-      qt_meta_data_TextMapWidget, &staticMetaObjectExtraData }
+    { &QWidget::staticMetaObject, qt_meta_stringdata_TextMapWidget.data,
+      qt_meta_data_TextMapWidget,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
 };
 
-#ifdef Q_NO_DATA_RELOCATION
-const QMetaObject &TextMapWidget::getStaticMetaObject() { return staticMetaObject; }
-#endif //Q_NO_DATA_RELOCATION
 
 const QMetaObject *TextMapWidget::metaObject() const
 {
-    return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
 void *TextMapWidget::qt_metacast(const char *_clname)
 {
-    if (!_clname) return 0;
-    if (!strcmp(_clname, qt_meta_stringdata_TextMapWidget))
+    if (!_clname) return Q_NULLPTR;
+    if (!strcmp(_clname, qt_meta_stringdata_TextMapWidget.stringdata0))
         return static_cast<void*>(const_cast< TextMapWidget*>(this));
     return QWidget::qt_metacast(_clname);
 }

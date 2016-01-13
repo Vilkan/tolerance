@@ -1,7 +1,7 @@
 #ifndef ButtonWidget_H
 #define ButtonWidget_H
 
-//#include <QtWidgets>
+#include <QtWidgets>
 #include <QtGui>
 
 class ButtonWidget : public QWidget

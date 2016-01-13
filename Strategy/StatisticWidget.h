@@ -1,7 +1,7 @@
 #ifndef STATISTICWIDGET_H
 #define STATISTICWIDGET_H
 
-//#include <QtWidgets>
+#include <QtWidgets>
 #include <QtGui>
 
 class StatisticWidget : public QWidget
